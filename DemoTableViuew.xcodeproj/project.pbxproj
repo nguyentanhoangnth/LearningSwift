@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7026CED26735E2A00312F47 /* DemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7026CE926735E2A00312F47 /* DemoTableViewCell.swift */; };
+		B7026CEE26735E2A00312F47 /* CellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7026CEA26735E2A00312F47 /* CellView.xib */; };
+		B7026CEF26735E2A00312F47 /* DemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7026CEB26735E2A00312F47 /* DemoTableViewCell.xib */; };
+		B7026CF026735E2A00312F47 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7026CEC26735E2A00312F47 /* CellView.swift */; };
+		B7026D0226735E8900312F47 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7026D0026735E8900312F47 /* SecondViewController.swift */; };
+		B7026D0326735E8900312F47 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7026D0126735E8900312F47 /* PushViewController.swift */; };
+		B7026D0926735E9300312F47 /* StoryboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7026D0726735E9300312F47 /* StoryboardTableViewController.swift */; };
+		B7026D0A26735E9300312F47 /* HandCodeTableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7026D0826735E9300312F47 /* HandCodeTableViewViewController.swift */; };
+		B7026D1426735ED900312F47 /* UIVewCoord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7026D1326735ED900312F47 /* UIVewCoord.swift */; };
+		B7026D1926735EE200312F47 /* DemoUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7026D1826735EE200312F47 /* DemoUIViewController.swift */; };
 		B712825E2670F8A40007225A /* ScrollViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B712825D2670F8A40007225A /* ScrollViewViewController.swift */; };
 		B7128266267100D20007225A /* HandCodeScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7128265267100D20007225A /* HandCodeScrollViewController.swift */; };
-		B748F7752667C82500E45920 /* DemoUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748F7742667C82500E45920 /* DemoUIViewController.swift */; };
-		B764E633266E4F3E0028A19D /* UIVewCoord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B764E632266E4F3E0028A19D /* UIVewCoord.swift */; };
-		B764E63A266E5E1E0028A19D /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B764E638266E5E1E0028A19D /* CellView.swift */; };
-		B764E63B266E5E1E0028A19D /* CellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B764E639266E5E1E0028A19D /* CellView.xib */; };
-		B764E644266E60180028A19D /* DemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B764E642266E60180028A19D /* DemoTableViewCell.swift */; };
-		B764E645266E60180028A19D /* DemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B764E643266E60180028A19D /* DemoTableViewCell.xib */; };
-		B7A1596C266A6144007B47B6 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A1596B266A6144007B47B6 /* PushViewController.swift */; };
-		B7A15974266A6C59007B47B6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A15973266A6C59007B47B6 /* SecondViewController.swift */; };
 		B7ACBA3526651F9600636DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ACBA3426651F9600636DE8 /* AppDelegate.swift */; };
 		B7ACBA3726651F9600636DE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ACBA3626651F9600636DE8 /* SceneDelegate.swift */; };
-		B7ACBA3926651F9600636DE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ACBA3826651F9600636DE8 /* ViewController.swift */; };
+		B7ACBA3926651F9600636DE8 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ACBA3826651F9600636DE8 /* DashboardViewController.swift */; };
 		B7ACBA3C26651F9600636DE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7ACBA3A26651F9600636DE8 /* Main.storyboard */; };
 		B7ACBA3E26651F9700636DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7ACBA3D26651F9700636DE8 /* Assets.xcassets */; };
 		B7ACBA4126651F9700636DE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7ACBA3F26651F9700636DE8 /* LaunchScreen.storyboard */; };
 		B7ACBA4C26651F9700636DE8 /* DemoTableViuewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ACBA4B26651F9700636DE8 /* DemoTableViuewTests.swift */; };
 		B7ACBA5726651F9700636DE8 /* DemoTableViuewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ACBA5626651F9700636DE8 /* DemoTableViuewUITests.swift */; };
-		B7ACBA6E266521A300636DE8 /* StoryboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ACBA6D266521A300636DE8 /* StoryboardTableViewController.swift */; };
-		B7ACBA73266521BE00636DE8 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ACBA72266521BE00636DE8 /* TableViewController.swift */; };
 		B7ACBA7F2665259D00636DE8 /* StoryboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ACBA7E2665259D00636DE8 /* StoryboardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,20 +48,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B7026CE926735E2A00312F47 /* DemoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTableViewCell.swift; sourceTree = "<group>"; };
+		B7026CEA26735E2A00312F47 /* CellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellView.xib; sourceTree = "<group>"; };
+		B7026CEB26735E2A00312F47 /* DemoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoTableViewCell.xib; sourceTree = "<group>"; };
+		B7026CEC26735E2A00312F47 /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		B7026D0026735E8900312F47 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B7026D0126735E8900312F47 /* PushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
+		B7026D0726735E9300312F47 /* StoryboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardTableViewController.swift; sourceTree = "<group>"; };
+		B7026D0826735E9300312F47 /* HandCodeTableViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandCodeTableViewViewController.swift; sourceTree = "<group>"; };
+		B7026D1326735ED900312F47 /* UIVewCoord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVewCoord.swift; sourceTree = "<group>"; };
+		B7026D1826735EE200312F47 /* DemoUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoUIViewController.swift; sourceTree = "<group>"; };
 		B712825D2670F8A40007225A /* ScrollViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewViewController.swift; sourceTree = "<group>"; };
 		B7128265267100D20007225A /* HandCodeScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandCodeScrollViewController.swift; sourceTree = "<group>"; };
-		B748F7742667C82500E45920 /* DemoUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUIViewController.swift; sourceTree = "<group>"; };
-		B764E632266E4F3E0028A19D /* UIVewCoord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVewCoord.swift; sourceTree = "<group>"; };
-		B764E638266E5E1E0028A19D /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
-		B764E639266E5E1E0028A19D /* CellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellView.xib; sourceTree = "<group>"; };
-		B764E642266E60180028A19D /* DemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewCell.swift; sourceTree = "<group>"; };
-		B764E643266E60180028A19D /* DemoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoTableViewCell.xib; sourceTree = "<group>"; };
-		B7A1596B266A6144007B47B6 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
-		B7A15973266A6C59007B47B6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B7ACBA3126651F9600636DE8 /* DemoTableViuew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoTableViuew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7ACBA3426651F9600636DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7ACBA3626651F9600636DE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B7ACBA3826651F9600636DE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7ACBA3826651F9600636DE8 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		B7ACBA3B26651F9600636DE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7ACBA3D26651F9700636DE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7ACBA4026651F9700636DE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,8 +74,6 @@
 		B7ACBA5226651F9700636DE8 /* DemoTableViuewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTableViuewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7ACBA5626651F9700636DE8 /* DemoTableViuewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViuewUITests.swift; sourceTree = "<group>"; };
 		B7ACBA5826651F9700636DE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7ACBA6D266521A300636DE8 /* StoryboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardTableViewController.swift; sourceTree = "<group>"; };
-		B7ACBA72266521BE00636DE8 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B7ACBA7E2665259D00636DE8 /* StoryboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +102,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B7026CDF26735DC400312F47 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				B7026D0826735E9300312F47 /* HandCodeTableViewViewController.swift */,
+				B7026D0726735E9300312F47 /* StoryboardTableViewController.swift */,
+				B7026CEC26735E2A00312F47 /* CellView.swift */,
+				B7026CEA26735E2A00312F47 /* CellView.xib */,
+				B7026CE926735E2A00312F47 /* DemoTableViewCell.swift */,
+				B7026CEB26735E2A00312F47 /* DemoTableViewCell.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		B7026CE026735DD000312F47 /* NavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				B7026D0126735E8900312F47 /* PushViewController.swift */,
+				B7026D0026735E8900312F47 /* SecondViewController.swift */,
+			);
+			path = NavigationView;
+			sourceTree = "<group>";
+		};
+		B7026D0E26735EA400312F47 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B7026D1326735ED900312F47 /* UIVewCoord.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B7026D0F26735EBA00312F47 /* LifeCircle */ = {
+			isa = PBXGroup;
+			children = (
+				B7026D1826735EE200312F47 /* DemoUIViewController.swift */,
+			);
+			path = LifeCircle;
+			sourceTree = "<group>";
+		};
 		B712825C2670F8870007225A /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,17 +147,6 @@
 				B7128265267100D20007225A /* HandCodeScrollViewController.swift */,
 			);
 			path = ScrollView;
-			sourceTree = "<group>";
-		};
-		B764E637266E5DE10028A19D /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				B764E638266E5E1E0028A19D /* CellView.swift */,
-				B764E639266E5E1E0028A19D /* CellView.xib */,
-				B764E642266E60180028A19D /* DemoTableViewCell.swift */,
-				B764E643266E60180028A19D /* DemoTableViewCell.xib */,
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		B7ACBA2826651F9600636DE8 = {
@@ -145,18 +172,15 @@
 		B7ACBA3326651F9600636DE8 /* DemoTableViuew */ = {
 			isa = PBXGroup;
 			children = (
+				B7026D0F26735EBA00312F47 /* LifeCircle */,
+				B7026D0E26735EA400312F47 /* Utils */,
+				B7026CE026735DD000312F47 /* NavigationView */,
+				B7026CDF26735DC400312F47 /* TableView */,
 				B712825C2670F8870007225A /* ScrollView */,
-				B764E637266E5DE10028A19D /* New Group */,
 				B7ACBA7D2665257B00636DE8 /* Storyboard */,
 				B7ACBA3426651F9600636DE8 /* AppDelegate.swift */,
 				B7ACBA3626651F9600636DE8 /* SceneDelegate.swift */,
-				B7ACBA3826651F9600636DE8 /* ViewController.swift */,
-				B7ACBA6D266521A300636DE8 /* StoryboardTableViewController.swift */,
-				B7ACBA72266521BE00636DE8 /* TableViewController.swift */,
-				B748F7742667C82500E45920 /* DemoUIViewController.swift */,
-				B7A1596B266A6144007B47B6 /* PushViewController.swift */,
-				B7A15973266A6C59007B47B6 /* SecondViewController.swift */,
-				B764E632266E4F3E0028A19D /* UIVewCoord.swift */,
+				B7ACBA3826651F9600636DE8 /* DashboardViewController.swift */,
 				B7ACBA3A26651F9600636DE8 /* Main.storyboard */,
 				B7ACBA3D26651F9700636DE8 /* Assets.xcassets */,
 				B7ACBA3F26651F9700636DE8 /* LaunchScreen.storyboard */,
@@ -294,10 +318,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B764E63B266E5E1E0028A19D /* CellView.xib in Resources */,
+				B7026CEE26735E2A00312F47 /* CellView.xib in Resources */,
 				B7ACBA4126651F9700636DE8 /* LaunchScreen.storyboard in Resources */,
 				B7ACBA3E26651F9700636DE8 /* Assets.xcassets in Resources */,
-				B764E645266E60180028A19D /* DemoTableViewCell.xib in Resources */,
+				B7026CEF26735E2A00312F47 /* DemoTableViewCell.xib in Resources */,
 				B7ACBA3C26651F9600636DE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,19 +347,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B764E63A266E5E1E0028A19D /* CellView.swift in Sources */,
+				B7026D1426735ED900312F47 /* UIVewCoord.swift in Sources */,
 				B7ACBA7F2665259D00636DE8 /* StoryboardTableViewCell.swift in Sources */,
-				B7ACBA3926651F9600636DE8 /* ViewController.swift in Sources */,
-				B7A1596C266A6144007B47B6 /* PushViewController.swift in Sources */,
+				B7ACBA3926651F9600636DE8 /* DashboardViewController.swift in Sources */,
+				B7026D1926735EE200312F47 /* DemoUIViewController.swift in Sources */,
+				B7026D0926735E9300312F47 /* StoryboardTableViewController.swift in Sources */,
 				B712825E2670F8A40007225A /* ScrollViewViewController.swift in Sources */,
 				B7128266267100D20007225A /* HandCodeScrollViewController.swift in Sources */,
-				B7A15974266A6C59007B47B6 /* SecondViewController.swift in Sources */,
 				B7ACBA3526651F9600636DE8 /* AppDelegate.swift in Sources */,
-				B764E644266E60180028A19D /* DemoTableViewCell.swift in Sources */,
-				B748F7752667C82500E45920 /* DemoUIViewController.swift in Sources */,
-				B7ACBA6E266521A300636DE8 /* StoryboardTableViewController.swift in Sources */,
-				B7ACBA73266521BE00636DE8 /* TableViewController.swift in Sources */,
-				B764E633266E4F3E0028A19D /* UIVewCoord.swift in Sources */,
+				B7026CED26735E2A00312F47 /* DemoTableViewCell.swift in Sources */,
+				B7026CF026735E2A00312F47 /* CellView.swift in Sources */,
+				B7026D0A26735E9300312F47 /* HandCodeTableViewViewController.swift in Sources */,
+				B7026D0326735E8900312F47 /* PushViewController.swift in Sources */,
+				B7026D0226735E8900312F47 /* SecondViewController.swift in Sources */,
 				B7ACBA3726651F9600636DE8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TableViewController: UIViewController {
+class HandCodeTableViewViewController: UIViewController {
     
     
     
@@ -21,8 +21,6 @@ class TableViewController: UIViewController {
                                   Contact.init(name: "Binh Thuan", phone: 0973469177),
                                   Contact.init(name: "Vung Tau", phone: 0973469177),
                                   Contact.init(name: "Can Tho", phone: 0973469177)]
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +42,7 @@ class TableViewController: UIViewController {
     }
 }
 
-extension TableViewController: UITableViewDelegate, UITableViewDataSource {
+extension HandCodeTableViewViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return contactList.count

@@ -7,17 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DashboardViewController: UIViewController {
     
     
     @IBOutlet weak var btnStoryboard: UIButton!
     
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     
@@ -25,16 +21,14 @@ class ViewController: UIViewController {
         let st = UIStoryboard.init(name: "Main", bundle: nil)
         let vc = st.instantiateViewController(identifier: "StoryboardTableViewController") as! StoryboardTableViewController
         self.navigationController?.pushViewController(vc, animated: true)
-        
     }
     
     
     
     @IBAction func moveToTableViewController(_ sender: Any) {
         let st = UIStoryboard.init(name: "Main", bundle: nil)
-        let vc = st.instantiateViewController(identifier: "TableViewController") as! TableViewController
+        let vc = st.instantiateViewController(identifier: "TableViewController") as! HandCodeTableViewViewController
         self.navigationController?.pushViewController(vc, animated: true)
-        
     }
     
     
