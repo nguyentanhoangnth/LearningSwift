@@ -44,5 +44,21 @@ class DashboardViewController: UIViewController {
         let vc = st.instantiateViewController(identifier: "HandCodeScrollViewController") as! HandCodeScrollViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    
+    @IBAction func moveToCollectionView(_ sender: Any) {
+        let st = UIStoryboard.init(name: "Home", bundle: nil)
+        let vc = st.instantiateViewController(identifier: "GalleryViewController") as! GalleryViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    @IBAction func moveToScrollViewController(_ sender: Any) {
+        let st = UIStoryboard.init(name: "Home", bundle: nil)
+        let vc = st.instantiateViewController(identifier: "TopViewController") as! TopViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }
 

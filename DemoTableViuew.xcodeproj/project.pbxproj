@@ -28,6 +28,10 @@
 		B7ACBA4C26651F9700636DE8 /* DemoTableViuewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ACBA4B26651F9700636DE8 /* DemoTableViuewTests.swift */; };
 		B7ACBA5726651F9700636DE8 /* DemoTableViuewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ACBA5626651F9700636DE8 /* DemoTableViuewUITests.swift */; };
 		B7ACBA7F2665259D00636DE8 /* StoryboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ACBA7E2665259D00636DE8 /* StoryboardTableViewCell.swift */; };
+		B7BB13F0267397A300C0249A /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB13EF267397A300C0249A /* GalleryViewController.swift */; };
+		B7BB13F8267397C500C0249A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BB13F7267397C500C0249A /* Home.storyboard */; };
+		B7BB14002673993400C0249A /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB13FF2673993400C0249A /* GalleryCollectionViewCell.swift */; };
+		B7BB140626739FC300C0249A /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB140526739FC300C0249A /* TopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		B7ACBA5626651F9700636DE8 /* DemoTableViuewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViuewUITests.swift; sourceTree = "<group>"; };
 		B7ACBA5826651F9700636DE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7ACBA7E2665259D00636DE8 /* StoryboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardTableViewCell.swift; sourceTree = "<group>"; };
+		B7BB13EF267397A300C0249A /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		B7BB13F7267397C500C0249A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B7BB13FF2673993400C0249A /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		B7BB140526739FC300C0249A /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +180,8 @@
 		B7ACBA3326651F9600636DE8 /* DemoTableViuew */ = {
 			isa = PBXGroup;
 			children = (
+				B7BB140426739FA400C0249A /* SlideViewController */,
+				B7BB13EE2673972400C0249A /* CollectionView */,
 				B7026D0F26735EBA00312F47 /* LifeCircle */,
 				B7026D0E26735EA400312F47 /* Utils */,
 				B7026CE026735DD000312F47 /* NavigationView */,
@@ -182,6 +192,7 @@
 				B7ACBA3626651F9600636DE8 /* SceneDelegate.swift */,
 				B7ACBA3826651F9600636DE8 /* DashboardViewController.swift */,
 				B7ACBA3A26651F9600636DE8 /* Main.storyboard */,
+				B7BB13F7267397C500C0249A /* Home.storyboard */,
 				B7ACBA3D26651F9700636DE8 /* Assets.xcassets */,
 				B7ACBA3F26651F9700636DE8 /* LaunchScreen.storyboard */,
 				B7ACBA4226651F9700636DE8 /* Info.plist */,
@@ -213,6 +224,23 @@
 				B7ACBA7E2665259D00636DE8 /* StoryboardTableViewCell.swift */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		B7BB13EE2673972400C0249A /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B7BB13EF267397A300C0249A /* GalleryViewController.swift */,
+				B7BB13FF2673993400C0249A /* GalleryCollectionViewCell.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		B7BB140426739FA400C0249A /* SlideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B7BB140526739FC300C0249A /* TopViewController.swift */,
+			);
+			path = SlideViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +349,7 @@
 				B7026CEE26735E2A00312F47 /* CellView.xib in Resources */,
 				B7ACBA4126651F9700636DE8 /* LaunchScreen.storyboard in Resources */,
 				B7ACBA3E26651F9700636DE8 /* Assets.xcassets in Resources */,
+				B7BB13F8267397C500C0249A /* Home.storyboard in Resources */,
 				B7026CEF26735E2A00312F47 /* DemoTableViewCell.xib in Resources */,
 				B7ACBA3C26651F9600636DE8 /* Main.storyboard in Resources */,
 			);
@@ -348,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7026D1426735ED900312F47 /* UIVewCoord.swift in Sources */,
+				B7BB14002673993400C0249A /* GalleryCollectionViewCell.swift in Sources */,
 				B7ACBA7F2665259D00636DE8 /* StoryboardTableViewCell.swift in Sources */,
 				B7ACBA3926651F9600636DE8 /* DashboardViewController.swift in Sources */,
 				B7026D1926735EE200312F47 /* DemoUIViewController.swift in Sources */,
@@ -358,7 +388,9 @@
 				B7026CED26735E2A00312F47 /* DemoTableViewCell.swift in Sources */,
 				B7026CF026735E2A00312F47 /* CellView.swift in Sources */,
 				B7026D0A26735E9300312F47 /* HandCodeTableViewViewController.swift in Sources */,
+				B7BB140626739FC300C0249A /* TopViewController.swift in Sources */,
 				B7026D0326735E8900312F47 /* PushViewController.swift in Sources */,
+				B7BB13F0267397A300C0249A /* GalleryViewController.swift in Sources */,
 				B7026D0226735E8900312F47 /* SecondViewController.swift in Sources */,
 				B7ACBA3726651F9600636DE8 /* SceneDelegate.swift in Sources */,
 			);
