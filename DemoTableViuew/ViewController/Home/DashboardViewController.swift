@@ -59,6 +59,12 @@ class DashboardViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func moveToDemoModel(_ sender: Any) {
+        let st = UIStoryboard.init(name: "Home", bundle: nil)
+        let vc = st.instantiateViewController(identifier: "DemoModelViewController") as! DemoModelViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
     
 }
 

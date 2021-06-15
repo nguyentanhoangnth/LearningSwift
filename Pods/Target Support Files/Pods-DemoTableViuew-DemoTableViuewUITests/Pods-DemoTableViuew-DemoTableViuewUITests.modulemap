@@ -1,0 +1,6 @@
+framework module Pods_DemoTableViuew_DemoTableViuewUITests {
+  umbrella header "Pods-DemoTableViuew-DemoTableViuewUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

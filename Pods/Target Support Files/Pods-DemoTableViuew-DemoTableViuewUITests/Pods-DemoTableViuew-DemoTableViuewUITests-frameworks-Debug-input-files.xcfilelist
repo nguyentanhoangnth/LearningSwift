@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-DemoTableViuew-DemoTableViuewUITests/Pods-DemoTableViuew-DemoTableViuewUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Codextended/Codextended.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
