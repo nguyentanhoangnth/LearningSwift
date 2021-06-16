@@ -14,7 +14,6 @@ class BaseModel<T: Codable>: Codable {
     var result: Bool?
     var data: T?
     
-    
     required init(from decoder: Decoder) throws {
         message = try? decoder.decode("message")
         result = try? decoder.decode("result")
