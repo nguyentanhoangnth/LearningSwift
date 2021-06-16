@@ -13,7 +13,7 @@ class BaseModel<T: Codable>: Codable {
     var message: String?
     var result: Bool?
     var data: T?
-    
+    //foenfoenfefjpef2
     
     required init(from decoder: Decoder) throws {
         message = try? decoder.decode("message")
