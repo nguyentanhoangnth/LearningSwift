@@ -8,12 +8,23 @@
 import Foundation
 import Codextended
 
+class BaseResponse: Codable {
+
+    var message : String?
+    var result: Bool?
+    var data: DataModel?
+    
+    required init(from decoder: Decoder) throws {
+        message = try? decoder.decode("message")
+        result = try? decoder.decode("result")
+        data = try? decoder.decode("data")
+    }
+}
 
 class BaseModel<T: Codable>: Codable {
     var message: String?
     var result: Bool?
     var data: T?
-    //foenfoenfefjpef2
     
     required init(from decoder: Decoder) throws {
         message = try? decoder.decode("message")

@@ -10,7 +10,7 @@ import Alamofire
 import NVActivityIndicatorView
 
 
-typealias CompleteHandleJSONCode = (_ isSuccess: Bool, _ json: Any?, _ statusCode: Int?)->()
+typealias CompleteHandleJSONCode = (_ isSuccess: Bool, _ json: Any?, _ statusCode: Int?) -> ()
 
 class Connectivity {
     class func isConnectedToInternet() -> Bool {
@@ -21,53 +21,33 @@ class Connectivity {
 struct BaseRequestService {
     static let shared = BaseRequestService()
     
-    
-    func requestWith<T: Codable>(_ url: String,_ method: HTTPMethod, _ parameters: [String: Any]?,_ header: [String: String]?, objectType: T.Type,  encoding: ParameterEncoding, _ animated : Bool = true,_ complete: @escaping CompleteHandleJSONCode) {
+    func requestWith<T: Codable>(url: String, method: HTTPMethod, parameters: [String: Any]?, objectType: T.Type,  encoding: ParameterEncoding,_ complete: @escaping CompleteHandleJSONCode) {
+        // show indicator
         if !Connectivity.isConnectedToInternet() {
             print("!Connectivity.isConnectedToInternet")
-            
-            
+            // off
             complete( false, nil, nil)
+            
         } else {
             let manager = Alamofire.SessionManager.default
-            var headers = header
-            let token = Token()
+            let headers = ["Content-Type": "application/json"]
             
-            if token.tokenExists {
-                headers = ["authorization": "Bearer \(token.token ?? "")",
-                           "Content-Type": "application/json"]
-            } else {
-                headers = ["Content-Type": "application/json"]
-            }
-            
-            if animated {
-                DispatchQueue.main.async {
-                    NVActivityIndicatorPresenter.sharedInstance.startAnimating(ActivityData(), nil)
-                }
-            }
-            
-            let (_url, _parameters) = self.generateUrl(url, method, parameters)
-            
-            manager.request(_url, method: method, parameters: _parameters, encoding: encoding, headers: headers).responseJSON(completionHandler: { (response) in
-                print("URL: \(_url)")
-                print("METHOD: \(method.rawValue)" )
-                print("PRAM: \(_parameters ?? [:])")
-                print("HEADER: \(headers ?? [:])")
+            manager.request(url, method: method, parameters: parameters, encoding: encoding, headers: headers).responseJSON(completionHandler: { (response) in
                 print("RESPONE: \(response.result.value ?? [:])")
                 
-                self.handleStatusCode(statusCode: response.response?.statusCode)
                 switch response.result {
                 case .success:
-                    NVActivityIndicatorPresenter.sharedInstance.stopAnimating(nil)
                     guard let json = response.result.value as? [String : Any] else {
                         complete(false, nil, response.response?.statusCode)
                         return
                     }
+                    
                     if let model = json.toCodableObject() as T? {
                         if let _model = model as? BaseResponse {
                             complete(true, _model, response.response?.statusCode)
+                            
                         } else {
-                            complete(true, model, response.response?.statusCode)
+                            complete(false, json, response.response?.statusCode)
                         }
                         
                     } else {
@@ -75,8 +55,6 @@ struct BaseRequestService {
                     }
                     
                 case .failure(let error):
-                    print(error.localizedDescription)
-                    NVActivityIndicatorPresenter.sharedInstance.stopAnimating(nil)
                     if let err = error as? URLError, err.code == .notConnectedToInternet {
                         print("notConnectedToInternet")
                     } else {
@@ -90,10 +68,22 @@ struct BaseRequestService {
                     break
                 }
             })
-            
         }
     }
-    
-    
-    
+}
+
+extension Dictionary {
+    func toCodableObject<T: Codable>() -> T? {
+        if let jsonData = try? JSONSerialization.data(withJSONObject: self, options: .prettyPrinted) {
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .useDefaultKeys
+            
+            if let obj = try? decoder.decode(T.self, from: jsonData) {
+                return obj
+            }
+            
+            return nil
+        }
+        return nil
+    }
 }

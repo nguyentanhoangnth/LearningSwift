@@ -12,8 +12,12 @@ class DashboardViewController: UIViewController {
     
     @IBOutlet weak var btnStoryboard: UIButton!
     
+    let viewModel = ApiViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        viewModel.login()
     }
     
     
