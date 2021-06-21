@@ -13,6 +13,7 @@
 		B70B434A267A337F00604A32 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70B4349267A337F00604A32 /* UserModel.swift */; };
 		B70F14A82677925E00499257 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F14A72677925E00499257 /* PersonModel.swift */; };
 		B70F14AE267792D700499257 /* DemoModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F14AD267792D700499257 /* DemoModelViewController.swift */; };
+		B754A19E2680C35A005C978E /* BaseRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B754A19D2680C35A005C978E /* BaseRequestAPI.swift */; };
 		B7ACBA3526651F9600636DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ACBA3426651F9600636DE8 /* AppDelegate.swift */; };
 		B7ACBA3726651F9600636DE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ACBA3626651F9600636DE8 /* SceneDelegate.swift */; };
 		B7ACBA3C26651F9600636DE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7ACBA3A26651F9600636DE8 /* Main.storyboard */; };
@@ -69,6 +70,7 @@
 		B70B4349267A337F00604A32 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		B70F14A72677925E00499257 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 		B70F14AD267792D700499257 /* DemoModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoModelViewController.swift; sourceTree = "<group>"; };
+		B754A19D2680C35A005C978E /* BaseRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestAPI.swift; sourceTree = "<group>"; };
 		B7ACBA3126651F9600636DE8 /* DemoTableViuew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoTableViuew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7ACBA3426651F9600636DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7ACBA3626651F9600636DE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +172,14 @@
 			path = DemoModel;
 			sourceTree = "<group>";
 		};
+		B754A19C2680C333005C978E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B754A19D2680C35A005C978E /* BaseRequestAPI.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		B7ACBA2826651F9600636DE8 = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +205,7 @@
 		B7ACBA3326651F9600636DE8 /* DemoTableViuew */ = {
 			isa = PBXGroup;
 			children = (
+				B754A19C2680C333005C978E /* Networking */,
 				B7D6EA6B267742CA003FD329 /* Storyboard */,
 				B7D6EA39267740C2003FD329 /* ViewController */,
 				B7D6EA37267740AF003FD329 /* ViewModel */,
@@ -590,6 +601,7 @@
 				B70F14A82677925E00499257 /* PersonModel.swift in Sources */,
 				B7D6EA74267742E8003FD329 /* ScrollViewViewController.swift in Sources */,
 				B70F14AE267792D700499257 /* DemoModelViewController.swift in Sources */,
+				B754A19E2680C35A005C978E /* BaseRequestAPI.swift in Sources */,
 				B7026D1426735ED900312F47 /* UIVewCoord.swift in Sources */,
 				B7D6EA8F26774304003FD329 /* PushViewController.swift in Sources */,
 				B7D6EA942677430E003FD329 /* DemoUIViewController.swift in Sources */,

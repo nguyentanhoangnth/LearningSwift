@@ -6,7 +6,9 @@ target 'DemoTableViuew' do
   use_frameworks!
 
   pod 'IQKeyboardManagerSwift'
-  pod 'Alamofire', '~> 5.4'
+  pod 'Alamofire'
+  pod 'NVActivityIndicatorView'
+  pod 'Codextended'
 
   # Pods for DemoTableViuew
 
