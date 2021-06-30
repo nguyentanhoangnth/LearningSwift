@@ -9,6 +9,7 @@ target 'DemoTableViuew' do
   pod 'Codextended'
   pod 'NVActivityIndicatorView'
   pod 'Alamofire','~> 4.9.1'
+  pod 'ReachabilitySwift'
 
   # Pods for DemoTableViuew
 

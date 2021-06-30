@@ -46,6 +46,25 @@ class StoryboardTableViewController: UIViewController {
         tableView.dataSource = self
         tableView.separatorStyle = .none
     }
+    
+    // Show popup
+    func showAlert() {
+        let alert = UIAlertController.init(title: "Thong bao", message: "Demo Delegate", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
+            UIAlertAction in
+            print("OK Pressed")
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel) {
+            UIAlertAction in
+            print("Cancel Pressed")
+        }
+        
+        alert.addAction(okAction)
+        alert.addAction(cancelAction)
+        
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 
 
@@ -60,16 +79,30 @@ extension StoryboardTableViewController: UITableViewDelegate, UITableViewDataSou
         let cell = tableView.dequeueReusableCell(withIdentifier: "StoryboardTableViewCell", for: indexPath) as! StoryboardTableViewCell
         cell.fillData(item: item)
         cell.selectionStyle = .none
+        cell.delegate = self //5
+        cell.index = indexPath.row
+        
+        cell.callbackIndex = { (ind, indie) in
+            print("\(ind ?? 0)")
+        }
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 65
+        return 80
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("indexpath : ", indexPath.row)
+    }
+}
+
+extension StoryboardTableViewController: StoryboardTableViewCellDelegate {
+    
+    //4
+    func showPopUp() {
+        self.showAlert()
     }
 }
 

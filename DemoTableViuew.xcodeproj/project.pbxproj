@@ -10,11 +10,14 @@
 		17850AD8CEC9F15A623A1298 /* Pods_DemoTableViuew_DemoTableViuewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E766E6ACF43C4E9E7BB0AEC /* Pods_DemoTableViuew_DemoTableViuewUITests.framework */; };
 		76D475E083DDEE540D3C1C5B /* Pods_DemoTableViuewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907FD9035BF11087603BB707 /* Pods_DemoTableViuewTests.framework */; };
 		B7026D1426735ED900312F47 /* UIVewCoord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7026D1326735ED900312F47 /* UIVewCoord.swift */; };
+		B70A987C2686D028000BC85E /* ManagerInternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A987B2686D028000BC85E /* ManagerInternetViewController.swift */; };
+		B70A987F2686D048000BC85E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A987E2686D048000BC85E /* BaseViewController.swift */; };
 		B70B434A267A337F00604A32 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70B4349267A337F00604A32 /* UserModel.swift */; };
 		B70F14A82677925E00499257 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F14A72677925E00499257 /* PersonModel.swift */; };
 		B70F14AE267792D700499257 /* DemoModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F14AD267792D700499257 /* DemoModelViewController.swift */; };
 		B754A19E2680C35A005C978E /* BaseRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B754A19D2680C35A005C978E /* BaseRequestAPI.swift */; };
 		B754A1A02680C89D005C978E /* ApiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B754A19F2680C89D005C978E /* ApiViewModel.swift */; };
+		B77059FB2683716A001032C9 /* Animals.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77059FA2683716A001032C9 /* Animals.swift */; };
 		B7ACBA3526651F9600636DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ACBA3426651F9600636DE8 /* AppDelegate.swift */; };
 		B7ACBA3726651F9600636DE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ACBA3626651F9600636DE8 /* SceneDelegate.swift */; };
 		B7ACBA3C26651F9600636DE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7ACBA3A26651F9600636DE8 /* Main.storyboard */; };
@@ -68,11 +71,14 @@
 		907FD9035BF11087603BB707 /* Pods_DemoTableViuewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoTableViuewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F9A9B6F29A0E5561E47BAD /* Pods-DemoTableViuew-DemoTableViuewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTableViuew-DemoTableViuewUITests.release.xcconfig"; path = "Target Support Files/Pods-DemoTableViuew-DemoTableViuewUITests/Pods-DemoTableViuew-DemoTableViuewUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B7026D1326735ED900312F47 /* UIVewCoord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVewCoord.swift; sourceTree = "<group>"; };
+		B70A987B2686D028000BC85E /* ManagerInternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerInternetViewController.swift; sourceTree = "<group>"; };
+		B70A987E2686D048000BC85E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B70B4349267A337F00604A32 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		B70F14A72677925E00499257 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 		B70F14AD267792D700499257 /* DemoModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoModelViewController.swift; sourceTree = "<group>"; };
 		B754A19D2680C35A005C978E /* BaseRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestAPI.swift; sourceTree = "<group>"; };
 		B754A19F2680C89D005C978E /* ApiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiViewModel.swift; sourceTree = "<group>"; };
+		B77059FA2683716A001032C9 /* Animals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animals.swift; sourceTree = "<group>"; };
 		B7ACBA3126651F9600636DE8 /* DemoTableViuew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoTableViuew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7ACBA3426651F9600636DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7ACBA3626651F9600636DE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +172,22 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		B70A987A2686D00B000BC85E /* CheckStatusInternet */ = {
+			isa = PBXGroup;
+			children = (
+				B70A987B2686D028000BC85E /* ManagerInternetViewController.swift */,
+			);
+			path = CheckStatusInternet;
+			sourceTree = "<group>";
+		};
+		B70A987D2686D038000BC85E /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B70A987E2686D048000BC85E /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
 		B70F14AC267792C400499257 /* DemoModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				B754A19F2680C89D005C978E /* ApiViewModel.swift */,
+				B77059FA2683716A001032C9 /* Animals.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -260,6 +283,8 @@
 		B7D6EA39267740C2003FD329 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B70A987D2686D038000BC85E /* BaseViewController */,
+				B70A987A2686D00B000BC85E /* CheckStatusInternet */,
 				B70F14AC267792C400499257 /* DemoModel */,
 				B7D6EA9F2677432D003FD329 /* Home */,
 				B7D6EA6A267742A3003FD329 /* Nib */,
@@ -604,15 +629,18 @@
 				B70F14A82677925E00499257 /* PersonModel.swift in Sources */,
 				B7D6EA74267742E8003FD329 /* ScrollViewViewController.swift in Sources */,
 				B70F14AE267792D700499257 /* DemoModelViewController.swift in Sources */,
+				B70A987C2686D028000BC85E /* ManagerInternetViewController.swift in Sources */,
 				B754A19E2680C35A005C978E /* BaseRequestAPI.swift in Sources */,
 				B7026D1426735ED900312F47 /* UIVewCoord.swift in Sources */,
 				B7D6EA8F26774304003FD329 /* PushViewController.swift in Sources */,
 				B7D6EA942677430E003FD329 /* DemoUIViewController.swift in Sources */,
 				B7D6EA8E26774304003FD329 /* SecondViewController.swift in Sources */,
+				B77059FB2683716A001032C9 /* Animals.swift in Sources */,
 				B7D6EA79267742F2003FD329 /* TopViewController.swift in Sources */,
 				B7D6EA88267742FB003FD329 /* HandCodeTableViewViewController.swift in Sources */,
 				B7D6EA73267742E8003FD329 /* HandCodeScrollViewController.swift in Sources */,
 				B7ACBA3526651F9600636DE8 /* AppDelegate.swift in Sources */,
+				B70A987F2686D048000BC85E /* BaseViewController.swift in Sources */,
 				B7ACBA3726651F9600636DE8 /* SceneDelegate.swift in Sources */,
 				B70B434A267A337F00604A32 /* UserModel.swift in Sources */,
 				B7D6EAA426774357003FD329 /* DashboardViewController.swift in Sources */,
@@ -793,16 +821,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KG7QPFA6TR;
+				DEVELOPMENT_TEAM = AFDY6TN4JW;
 				INFOPLIST_FILE = DemoTableViuew/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hoangnt.demovideo.DemoTableViuew;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.artbooking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -814,16 +844,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KG7QPFA6TR;
+				DEVELOPMENT_TEAM = AFDY6TN4JW;
 				INFOPLIST_FILE = DemoTableViuew/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hoangnt.demovideo.DemoTableViuew;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.artbooking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

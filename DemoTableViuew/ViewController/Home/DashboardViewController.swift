@@ -18,6 +18,7 @@ class DashboardViewController: UIViewController {
         super.viewDidLoad()
         
         viewModel.login()
+        
     }
     
     
@@ -68,6 +69,13 @@ class DashboardViewController: UIViewController {
         let vc = st.instantiateViewController(identifier: "DemoModelViewController") as! DemoModelViewController
         self.navigationController?.pushViewController(vc, animated: true)
         
+    }
+    
+    
+    @IBAction func moveToCheckInternet(_ sender: Any) {
+        let st = UIStoryboard.init(name: "Home", bundle: nil)
+        let vc = st.instantiateViewController(identifier: "ManagerInternetViewController") as! ManagerInternetViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
